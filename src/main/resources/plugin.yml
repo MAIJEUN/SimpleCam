@@ -1,0 +1,10 @@
+name: SimpleCam
+version: 1.8
+main: com.maijsoft.simplecam.Main
+api-version: 1.21.1
+description: A camera movement plugin for Minecraft
+commands:
+  cm:
+    description: Camera plugin commands
+    usage: /cm <subcommand>
+    aliases: [camera]
