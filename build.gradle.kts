@@ -3,7 +3,7 @@ plugins {
 }
 
 group = "com.maijsoft.simplecam"
-version = "1.8-SNAPSHOT"
+version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
