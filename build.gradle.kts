@@ -12,7 +12,7 @@ repositories {
 
 dependencies {
     // Paper API 추가
-    compileOnly("io.papermc.paper:paper-api:1.21.3-R0.1-SNAPSHOT")
+    compileOnly("io.papermc.paper:paper-api:1.20-R0.1-SNAPSHOT")
 }
 
 tasks.withType<JavaCompile> {
