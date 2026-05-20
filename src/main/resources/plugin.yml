@@ -1,0 +1,34 @@
+name: SimpleCam
+version: '${version}'
+main: kr.maijsoft.simplecam.SimpleCam
+api-version: '1.21'
+authors: [maijsoft]
+description: Cinematic camera plugin - record positions, play scenes with smooth interpolation.
+commands:
+  camera:
+    description: Manage camera waypoints.
+    usage: |
+      /camera create <name>      - Create a camera at your current position
+      /camera delete <name>      - Delete a camera
+      /camera list               - List all cameras
+      /camera tp <name>          - Teleport to a camera position
+      /camera gui                - Open the management GUI
+    permission: simplecam.use
+  scene:
+    description: Manage and play cinematic scenes.
+    usage: |
+      /scene create <name>                  - Create a new scene
+      /scene delete <name>                  - Delete a scene
+      /scene list                           - List scenes
+      /scene addcam <scene> <camera> [secs] - Append a camera to a scene
+      /scene removecam <scene> <index>      - Remove a camera at index
+      /scene play <scene> [player]          - Play a scene
+      /scene stop [player]                  - Stop playback
+    permission: simplecam.use
+permissions:
+  simplecam.use:
+    description: Allows using SimpleCam commands.
+    default: op
+  simplecam.admin:
+    description: Allows playing scenes on other players.
+    default: op

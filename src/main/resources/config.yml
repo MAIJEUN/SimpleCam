@@ -1,0 +1,10 @@
+# SimpleCam configuration
+playback:
+  # Default seconds per camera segment if not specified when adding.
+  default-segment-seconds: 4.0
+  # Server tick rate used for interpolation. 20 = stock.
+  tick-rate: 20
+  # When true, returns the player to their original location & gamemode after playback ends.
+  restore-on-finish: true
+  # When true, places the player into spectator while a scene plays.
+  use-spectator: true
